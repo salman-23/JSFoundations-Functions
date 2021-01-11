@@ -8,7 +8,10 @@
  */
 function greet(name) {
   // Your code here
+  console.log(`Hello ${name}`);
 }
+
+greet("Sadeq");
 
 /**
  * isOdd(n):
@@ -21,7 +24,14 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n % 2 == 0) {
+    return false;
+  } else {
+    return true;
+  }
 }
+isOdd(7);
+isOdd(10);
 
 /**
  * oddsSmallerThan(n):
@@ -34,7 +44,10 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  return parseInt(n / 2);
 }
+
+oddsSmallerThan(7);
 
 /**
  * squareOrDouble(n):
@@ -48,6 +61,13 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n % 2 == 0) {
+    return n * 2;
+  } else if (!(n % 2 == 0)) {
+    return n * n;
+  }
 }
+squareOrDouble(16);
+squareOrDouble(9);
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
